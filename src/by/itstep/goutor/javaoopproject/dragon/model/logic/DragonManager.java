@@ -19,7 +19,7 @@ public class DragonManager {
             return -2;
         }
 
-        int head = 3;
+        int head = BORN;
 
 
         if (dragon.getAge() < FIRST_PERIOD) {
