@@ -89,5 +89,26 @@ public class DragonManagerTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testCountHead300Years() {
+        dragon.setAge(300);
+        int expected = 803;
+
+        int actual = DragonManager.calculateDragonHead(dragon);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testCountThirdPeriodHead() {
+        dragon.setAge(350);
+        int expected = 853;
+
+        int actual = DragonManager.calculateDragonHead(dragon);
+
+        assertEquals(expected, actual);
+    }
+
+
 
 }
