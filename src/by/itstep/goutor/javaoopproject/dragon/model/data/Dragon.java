@@ -34,7 +34,7 @@ public class Dragon {
     @Override
     public String toString() {
         return "Dragon{" +
-                "name = " + name + '\'' +
+                "name = " + name +
                 ", age = " + age +
                 '}';
     }
