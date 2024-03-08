@@ -22,6 +22,17 @@ public class DragonManager {
         int head = 3;
 
 
+        if (dragon.getAge() < FIRST_PERIOD) {
+            head += dragon.getAge() * FIRST_HEAD;
+        } else if (dragon.getAge() < SECOND_PERIOD) {
+            head += FIRST_PERIOD * FIRST_HEAD + (dragon.getAge() - FIRST_PERIOD)
+                    * SECOND_HEAD;
+        } else {
+            head += FIRST_PERIOD * FIRST_HEAD + (SECOND_PERIOD - FIRST_PERIOD)
+                    * 2 - SECOND_PERIOD + dragon.getAge();
+        }
+
+
         return head;
     }
 }
