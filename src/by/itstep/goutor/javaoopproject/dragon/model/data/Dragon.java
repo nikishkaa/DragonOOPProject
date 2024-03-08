@@ -26,7 +26,9 @@ public class Dragon {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if (age >= 0) {
+            this.age = age;
+        }
     }
 
     @Override
