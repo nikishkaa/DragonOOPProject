@@ -10,7 +10,7 @@ public class UserInit {
     }
 
     public static int getUserNumber() {
-
+        System.out.print("Enter Dragon age ");
         return SCANNER.nextInt();
     }
 }
